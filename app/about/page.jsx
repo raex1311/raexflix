@@ -10,7 +10,7 @@ const about = () => {
                       alt="About Us"
                       className="object-cover w-full"
                       height="100%"
-                      src="images/logo.png"
+                      src="/images/logo.png"
                       width="100%"
                   />
               </div>

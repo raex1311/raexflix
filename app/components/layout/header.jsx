@@ -1,17 +1,17 @@
 import React from 'react'
 import Image from 'next/image'
 import NavLink from '../ui/NavLink'
+import Logo from '@/public/images/logo.png'
 
 const header = () => {
   return (
       <div className='bg-gray-800 flex p-3 item-center gap-3'>
-        <Image
-         //src="/images/logo.png"
-         src = "/images/logo.png"
-        width={50}
-        height={50}
-        alt="RaeXFlix"
-        />
+          <Image
+              src={Logo}
+              width={50}
+              height={50}
+              alt="RaeXFlix"
+          />
         <nav className = 'container'>
               <ul className='flex flex-row-reverse gap-3 px-4 my-3'>
 
