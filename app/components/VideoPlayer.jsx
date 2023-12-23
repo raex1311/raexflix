@@ -4,6 +4,7 @@ import ReactPlayer from "react-player";
 
 const VideoPlayer = (theurl) => {
   //video path
+  //let videosrc = "/videos/levitate.mp4";
   const videourl = theurl;
   console.log(videourl.theurl);
 

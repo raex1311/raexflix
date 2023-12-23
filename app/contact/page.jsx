@@ -19,7 +19,7 @@ const contact = () => {
             </svg>
           </div>
           <div class="flex flex-col items-center text-center justify-center">
-            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg text-gray-500">Mayuresh Rajwar</h2>
+            <h2 class="font-medium title-font mt-4 text-lg text-gray-500">Mayuresh Rajwar</h2>
             <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
             <p class="text-base">Email : gfx460@gmail.com</p>
             <p class="text-base">phone : 8116867877</p>

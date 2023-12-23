@@ -6,7 +6,8 @@ const header = () => {
   return (
       <div className='bg-gray-800 flex p-3 item-center gap-3'>
         <Image
-         src="/images/logo.png"
+         //src="/images/logo.png"
+         src = "/images/logo.png"
         width={50}
         height={50}
         alt="RaeXFlix"
