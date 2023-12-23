@@ -24,7 +24,7 @@ export default async function cardLayout() {
   return (
       <div className="grid grid-cols-4">
           {metadata.map(t => (  
-        <MyCard title={t.title} playerID={t._id} imageSrc={t.image} />
+        <MyCard key={t._id} title={t.title} playerID={t._id} imageSrc={t.image} />
         ))}
       </div>
 
