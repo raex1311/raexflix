@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 
 const getMetadata = async() =>{
     try{
-        const res = await fetch('http://localhost:3000/api/metadata',
+        const res = await fetch(`${process.env.LOCAL_URI}/api/metadata`,
          {cache: 'no-store'}
          )
  

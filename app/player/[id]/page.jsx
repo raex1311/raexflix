@@ -4,7 +4,7 @@ import VideoPlayer from "@/app/components/VideoPlayer";
 
 const getTopicByID = async(id) => {
     try{
-        const res = await fetch(`http://localhost:3000/api/metadata/${id}`,
+        const res = await fetch(`${process.env.LOCAL_URI}/api/metadata/${id}`,
          {cache: 'no-store'}
          )
          if(!res.ok){
