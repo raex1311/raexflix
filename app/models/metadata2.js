@@ -1,7 +1,7 @@
 import mongoose, {Schema} from 'mongoose';
 
 
-const metadataSchema = new Schema(
+const metadataSchema2 = new Schema(
     {
         title: String,
         description: String,
@@ -15,5 +15,5 @@ const metadataSchema = new Schema(
     }
 )
 
-const Metadata = mongoose.models.Metadata || mongoose.model("Metadata", metadataSchema);
-export default Metadata;
+const Metadata2 = mongoose.models.Metadata2 || mongoose.model("Metadata2", metadataSchema2);
+export default Metadata2;

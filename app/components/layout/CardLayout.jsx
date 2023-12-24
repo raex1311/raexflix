@@ -20,10 +20,10 @@ const getMetadata = async() =>{
 }
 
 export default async function cardLayout() {
-    const {metadata} = await getMetadata();
+    const {metadata2} = await getMetadata();
   return (
       <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 grid-cols-2">
-          {metadata.map(t => (  
+          {metadata2.map(t => (  
         <MyCard key={t._id} title={t.title} playerID={t._id} imageSrc={t.image} />
         ))}
       </div>

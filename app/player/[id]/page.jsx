@@ -18,14 +18,15 @@ const getTopicByID = async(id) => {
 }
 
 export default async function page({params})  {
-    const {id} = params;
-    const {metadata} = await getTopicByID(id);
-    const {title, description,url, category} = metadata;
+    const { id } = params;
+    const {metadata2} = await getTopicByID(id);
+    const {title, description,url, category, subtitle} = metadata2;
+    console.log("SUbtitle: ",subtitle)
   return (
       <div className='bg-gray-900 min-h-screen'>
           <div className='max-w-[1320px] flex mx-3'>
               <div className="basic-[60%] mx-4 my-4">
-                  <VideoPlayer theurl = {url}/>
+              <VideoPlayer theurl = {url} subtitleURL = {subtitle}/>
               </div>
           </div>
           <div className='max-w-[1320px] flex mx-3'>

@@ -1,12 +1,10 @@
 "use client";
-import React from "react";
+import React, {useState} from "react";
 import ReactPlayer from "react-player";
 
-const VideoPlayer = (theurl) => {
+const VideoPlayer = (theurl, subtitleURL) => {
   //video path
-  //let videosrc = "/videos/levitate.mp4";
   const videourl = theurl;
-  console.log(videourl.theurl);
 
   return (
     <div>
@@ -15,6 +13,7 @@ const VideoPlayer = (theurl) => {
         height="100%"
         url = {videourl.theurl}
         controls={true}
+
         // light is usefull incase of dark mode
         light={false}
         // picture in picture
