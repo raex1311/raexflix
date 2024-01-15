@@ -19,7 +19,7 @@ const VideoPlayer = (theurl, subtitleURL) => {
         // picture in picture
         pip={true}
       />
-      <source src={videourl.theurl} type="video/mp4" />
+      <source src={videourl.theurl} type="video/x-matroska" />
     </div>
   );
 };
