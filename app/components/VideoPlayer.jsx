@@ -19,7 +19,7 @@ const VideoPlayer = (theurl, subtitleURL) => {
           {
             file:{
               attributes: {
-                crossOrigin: "anonymous"
+                crossOrigin: true
               },
               tracks:[{
                 kind: "subtitles",
