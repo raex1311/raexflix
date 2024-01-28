@@ -6,6 +6,7 @@ const VideoPlayer = (theurl, subtitleURL) => {
   //video path
   const videourl = theurl;
 
+
   return (
     <div>
       <ReactPlayer
@@ -14,6 +15,22 @@ const VideoPlayer = (theurl, subtitleURL) => {
         url = {videourl.theurl}
         controls={true}
 
+        config={
+          {
+            file:{
+              attributes: {
+                crossOrigin: "true"
+              },
+              tracks:[{
+                kind: "subtitles",
+                src: theurl.subtitleURL,
+                srcLang: "en",
+                default: true,
+
+              }]
+            }
+          }
+        }
         // light is usefull incase of dark mode
         light={false}
         // picture in picture
