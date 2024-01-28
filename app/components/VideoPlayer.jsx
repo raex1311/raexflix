@@ -25,7 +25,7 @@ const VideoPlayer = (theurl, subtitleURL) => {
                 kind: "subtitles",
                 src: theurl.subtitleURL,
                 srcLang: "en",
-                default: true,
+                default: false,
 
               }]
             }
